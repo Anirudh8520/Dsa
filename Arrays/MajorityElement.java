@@ -15,8 +15,19 @@ public class MajorityElement {
                 majority = arr[i];
                 count = 1;
             }
+            
         }
-        System.out.println(majority);
-          
+        int freq = 0;
+        for(int i=0; i<n; i++) {
+            if(arr[i] == majority) {
+               freq++;
+            }
+        }
+        if(freq > n/2) {
+            System.out.println(majority);
+        } else {
+            System.out.println("No majoirty element");
+        }
+        
     }
 }
