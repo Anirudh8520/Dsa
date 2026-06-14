@@ -2,7 +2,7 @@ import java.util.*;
 public class KadanesAlgorithm {
     public static void main (String [] args) {
         
-         int arr[] = {1,2,3,4,5};
+         int arr[] = {3,-1,2,3,2,-4,6};
         int n = arr.length;
         int Maxsum = Integer.MIN_VALUE;
         int CurrentSum = 0;
