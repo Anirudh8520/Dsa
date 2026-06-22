@@ -13,14 +13,12 @@ public class TwoSum {
         
     }
     for(int i=0; i<n; i++) {
-        //pairsum = first + second = target
-        int second = target - arr[i];
-        if(map.containsKey(second)) {
-            System.out.println("The indices are: " + map.get(second) + " and " + i);
-            break;
+       for(int j=i+1; j<n; j++) {
+        if(arr[i]+arr[j] == target) {
+            System.out.println("the elements are:"+arr[i] +" "+arr[j]);
         }
-        map.put(arr[i],i);
-    }
+       }
 
+}
 }
 }
